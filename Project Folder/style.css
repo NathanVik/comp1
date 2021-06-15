@@ -1,0 +1,164 @@
+/*global*/
+*{
+    margin:0;
+}
+html{
+font-size: 62.5%;
+}
+:root{
+    --primary:rgb(27, 216, 153) /*setting variable of "--primary" to a color, then use var(--primary) to select color*/
+}
+
+body{
+    font-family: 'Lora', serif;
+    /*background-color: red; mobile */
+}
+@media(min-width:768px){
+    body{
+        /*background-color: blue; desktop view, because width min is 768*/
+    }
+}
+p{
+    font-size: 1.6rem;
+    margin:2rem;
+    /* line-height:1.5; to double space*/
+}
+
+/*utilities*/
+.center{
+    text-align: center
+}
+img{
+    max-width: 100%;
+}
+
+
+/*header*/
+
+.main-header{
+ 
+    background-color: var(--primary);
+    color:black;
+    height:40vh;
+}
+    
+@media(min-width:768px){
+    .main-header{
+        display:flex;
+        justify-content: center;
+        align-items: center; /*centers in the space as a whole */ 
+    }
+    .main-header h1{
+        font-size:8rem;
+        width:60rem;
+    }
+}
+.main-header h1{
+    color:black;
+    font-size: 5.5rem;
+    width:60rem;
+    text-align: center;
+    }
+.main-header h2{
+    color:white;
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    font-weight: lighter;
+}
+.icons-container{
+
+    text-align: center;
+    margin-top: 3rem;
+    text-shadow: 2px 2px white;
+}
+.icons-container i{
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+}
+.icons-container i:hover{
+    color: blanchedalmond;
+}
+.menu{
+    text-align: center;
+    margin-top: 30px;
+}
+.menu a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu a:hover{
+    color: black;
+}
+
+/*main*/
+.img-container{
+    width: 150px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+.img-container img{
+    border-radius: 50%;
+    border:5px solid black;
+    padding: 4px;
+}
+.site-footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top:1rem;
+}
+.site-footer .icons-container a i{
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: none;
+    padding-bottom: 1rem;
+}
+.flex-wrapper{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+.page-header{
+    font-size: 3rem;
+    padding: 3rem;
+}
+.project-list{
+    font-size: 1.6rem;
+    margin-left: 4rem;
+}
+
+/* Course Page*/
+header.second-header{
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    height: 8vh;
+    align-items: center;
+}
+header.second-header h1{
+    font-size: 4rem;
+    padding-left:1rem;
+}
+/* Contact Page */
+.contact-icon i{
+    color:black;
+    font-size:4rem;
+    padding: 1.6rem;
+}
+.contact-block{
+    font-size: 2rem;
+    text-align: center;
+}
+.contact-header{
+    font-size: 3rem;
+}
